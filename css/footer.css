@@ -9,7 +9,15 @@
 
 #foot_table {
     height: 100%;
-    width: 100%;
+    margin: 0 auto;
+}
+
+.row th + th {
+    border-left: 5rem solid transparent;
+}
+
+.row td + td {
+    border-left: 5rem solid transparent;
 }
 
 .row1_text {
@@ -17,13 +25,11 @@
     font-size: 2rem;
     font-style: italic;
     justify-content: center;
-    width: 33%;
 }
 
 .row2_text {
     color: white;
     text-align: center;
-    width: 33%;
 }
 
 .icon_table {
@@ -31,17 +37,13 @@
     margin: 0 auto;
 }
 
-/*
-.icon_row {
-    column-gap: 1rem;
+.icon_row td + td {
+    border-left: 1rem solid transparent;
 }
-*/
 
 .icon {
     max-height: 1.5rem;
     max-width: 1.5rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
 }
 
 .icon img{
