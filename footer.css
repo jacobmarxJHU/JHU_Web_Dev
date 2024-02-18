@@ -26,4 +26,26 @@
     width: 33%;
 }
 
+.icon_table {
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*
+.icon_row {
+    column-gap: 1rem;
+}
+*/
+
+.icon {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.icon img{
+    height: auto;
+    max-width: 100%;
+}
 
