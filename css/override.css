@@ -8,6 +8,14 @@ a {
     color: inherit;
 }
 
+button {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: none;
+    line-height: 0;
+}
+
 button:active {
     transform: translateY(1px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);

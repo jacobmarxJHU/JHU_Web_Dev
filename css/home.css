@@ -88,12 +88,17 @@
 }
 
 .add-more-btn {
-    text-transform: uppercase;
-    padding: 1rem 2rem;
-    border-radius: 100px;
-    border: none;
-    line-height: 0;
     color: antiquewhite;
     background-color: #333;
     margin-bottom: 1rem;
+}
+
+.menu_option {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.selected_food_type {
+    background-color: aqua;
 }
