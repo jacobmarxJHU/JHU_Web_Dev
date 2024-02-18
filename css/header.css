@@ -47,7 +47,3 @@
     background-color: #5c73FF;
 }
 
-.merch:active {
-    transform: translateY(1px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
