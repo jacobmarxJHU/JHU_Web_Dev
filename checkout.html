@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Italian Eats</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale-1" />
+    <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
+    <link href="css/override.css" rel="stylesheet" type="text/css" />
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/checkout.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+    <header id="header">
+        <a href="index.html" id="logo">Italian Eats</a>
+        <ul class="nav_menu">
+            <li class="nav_item"><a href="index.html">Home</a></li>
+            <li class="nav_item"><a href="#">Menu</a></li>
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <li class="nav_item"><a href="#">Book Table</a></li>
+        </ul>
+        <ul class="nav_menu">
+            <li class="nav_item"><img src="public/account.png" width="25" height="25"></li>
+            <li class="nav_item"><img src="public/cart.png" width="25" height="25"></li>
+            <li class="nav_item"><img src="public/search.png" width="25" height="25"></li>
+        </ul>
+        <button class="merch">
+            Order Online
+        </button>
+    </header>
+
+    <div id="content">
+        <h1>
+            Checkout
+        </h1>
+        <form method="post" action="#" id="checkout">
+            <div class="form_label">
+                <h2>Billing Information</h2>
+            </div>
+            <div class="subform">
+                <div class="text_input">
+                    <label>First Name:</label>
+                    <input type="text" name="firstname" id="fName" placeholder="First Name..."/>
+                </div>
+                <div class="text_input">
+                    <label>Last Name:</label>
+                    <input type="text" name="lastname" id="lName" placeholder="Last Name..."/>
+                </div>
+                <div class="text_input">
+                    <label>Street Address:</label>
+                    <input type="text" name="street1" id="street1" placeholder="Adresss..."/>
+                </div>
+                <div class="text_input">
+                    <label>Street Address (2):</label>
+                    <input type="text" name="street2" id="street2" placeholder="Adresss..."/>
+                </div>
+                <div class="text_input">
+                    <label>City:</label>
+                    <input type="text" name="city" id="fName" placeholder="City..."/>
+                </div>
+                <div class="text_input">
+                    <label>State:</label>
+                    <input type="text" name="state" id="state" placeholder="State..."/>
+                </div>
+                <div class="text_input">
+                    <label>Zip Code:</label>
+                    <input type="text" name="zipcode" id="zipcode" placeholder="Zipcode..."/>
+                </div>
+                <div class="text_input">
+                    <label>Country:</label>
+                    <input type="text" name="country" id="country" placeholder="Country..."/>
+                </div>
+                <div class="text_input">
+                    <label>Phone Number:</label>
+                    <input type="text" name="phone" id="phone" placeholder="(XXX) XXX-XXXX"/>
+                </div>
+                <div class="text_input">
+                    <label>Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Emails..."/>
+                </div>
+            </div>
+            <div class="form_label">
+                <h2>Credit Cart Information</h2>
+            </div>
+            <div class="subform">
+                <div class="check_boxes">
+                    <input type="checkbox" class="cardType" />
+                    <label>VISA</label>
+                    <input type="checkbox" class="cardType"/>
+                    <label>Master Card</label>
+                    <input type="checkbox" class="cardType"/>
+                    <label>VISA</label>
+                    <input type="checkbox" class="cardType"/>
+                    <label>VISA</label>
+                </div>
+                </div>
+            <div class="subform">
+                <div class="text_input">
+                    <label>Card Number:</label>
+                    <input type="text" name="cardNum" id="cardNum" placeholder="nnnn-nnnn-nnnn-nnnn"/>
+                </div>
+                <div class="text_input">
+                    <label>Expiration Date:</label>
+                    <input type="date" name="expdate" id="" required/>
+                </div>
+                <div class="text_input">
+                    <label>CVC:</label>
+                    <input type="text" name="CVC" id="cvc" required placeholder="nnn"/>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="submit order"/>
+                <input type="reset" value="cancel"/>
+            </div>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <table id="foot_table">
+            <tr class="row" id="row1">
+                <th class="row1_text">Contact Us</th>
+                <th class="row1_text">Italian Eats</th>
+                <th class="row1_text">Hours</th>
+            </tr>
+            <tr class="row" id="row2">
+                <td class="row2_text">
+                    Westerly, RI<br>631-944-1494<br>jmarx14@jh.edu
+                </td>
+                <td class="row2_text">
+                    <p>We love pizza and so should you!</p>
+                    <table class="icon_table">
+                        <tr class="icon_row">
+                            <td class="icon">
+                                <img  src="public/icons/twitter.png"/>
+                            </td>
+                            <td class="icon">
+                                <img  src="public/icons/facebook.png"/>
+                            </td>
+                            <td class="icon">
+                                <img  src="public/icons/instagram.webp"/>
+                            </td>
+                            <td class="icon">
+                                <img  src="public/icons/pinterest.png"/>
+                            </td>
+                            <td class="icon">
+                                <img  src="public/icons/linkedin.png"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="row2_text">
+                    Monday - Thursday: 9 am - 6 pm
+                    <br>Friday - Saturday: 9 am - 9 pm 
+                    <br>Sunday: 10 am - 4 pm
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
