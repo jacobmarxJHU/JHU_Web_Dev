@@ -8,12 +8,12 @@
     <!--<link href="style.css" rel="stylesheet" type="text/css" />-->
     <link href="css/override.css" rel="stylesheet" type="text/css" />
     <link href="css/header.css" rel="stylesheet" type="text/css" />
-    <link href="css/checkout.css" rel="stylesheet" type="text/css" />
+    <link href="css/book.css" rel="stylesheet" type="text/css" />
     <link href="css/footer.css" rel="stylesheet" type="text/css" />
+    <script src="src/book.js" defer></script>
 </head>
 
 <body>
-
 
     <header id="header">
         <a href="index.html" id="logo">Italian Eats</a>
@@ -35,85 +35,45 @@
 
     <div id="content">
         <h1>
-            Checkout
+            Book Table
         </h1>
         <form method="post" action="#" id="checkout">
-            <div class="form_label">
-                <h2>Billing Information</h2>
-            </div>
             <div class="subform">
                 <div class="text_input">
-                    <label>First Name:</label>
-                    <input type="text" name="firstname" id="fName" placeholder="First Name..." required/>
-                </div>
-                <div class="text_input">
-                    <label>Last Name:</label>
-                    <input type="text" name="lastname" id="lName" placeholder="Last Name..." required/>
-                </div>
-                <div class="text_input">
-                    <label>Street Address:</label>
-                    <input type="text" name="street1" id="street1" placeholder="Adresss..." required/>
-                </div>
-                <div class="text_input">
-                    <label>Street Address (2):</label>
-                    <input type="text" name="street2" id="street2" placeholder="Adresss..."/>
-                </div>
-                <div class="text_input">
-                    <label>City:</label>
-                    <input type="text" name="city" id="fName" placeholder="City..." required/>
-                </div>
-                <div class="text_input">
-                    <label>State:</label>
-                    <input type="text" name="state" id="state" placeholder="State..." required/>
-                </div>
-                <div class="text_input">
-                    <label>Zip Code:</label>
-                    <input type="text" name="zipcode" id="zipcode" placeholder="Zipcode..." required/>
-                </div>
-                <div class="text_input">
-                    <label>Country:</label>
-                    <input type="text" name="country" id="country" placeholder="Country..." required/>
+                    <label>Full Name:</label>
+                    <input type="text" name="guestName" id="guestName" placeholder="guest name"/>
                 </div>
                 <div class="text_input">
                     <label>Phone Number:</label>
-                    <input type="text" name="phone" id="phone" placeholder="(XXX) XXX-XXXX"/>
+                    <input type="text" maxlength="9" name="phone" id="phone"
+                    pattern="[1-9]{1}[0-9]{11}" placeholder="phone number"/>
                 </div>
                 <div class="text_input">
                     <label>Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Emails..." required/>
+                    <input type="email" name="email" id="email" placeholder="email"/>
+                </div>
+                <div class="text_input">
+                    <label>Number of Guests:</label>
+                    <input type="number" name="numGuests" id="numGuests"/>
+                </div>
+                <div class="text_input">
+                    <label>Reservation Date:</label>
+                    <input type="date" name="resDate" id="resDate" required/>
+                </div>
+                <div class="text_input">
+                    <label>Reservation Time:</label>
+                    <input type="time" name="resTime" id="resTime" required
+                    value="17:00"/>
                 </div>
             </div>
-            <div class="form_label">
-                <h2>Credit Cart Information</h2>
-            </div>
-            <div class="subform">
-                <div class="check_boxes">
-                    <input type="checkbox" class="cardType" />
-                    <label>American Express</label>
-                    <input type="checkbox" class="cardType"/>
-                    <label>Master Card</label>
-                    <input type="checkbox" class="cardType"/>
-                    <label>Discovery</label>
-                    <input type="checkbox" class="cardType"/>
-                    <label>VISA</label>
-                </div>
-                </div>
-            <div class="subform">
-                <div class="text_input">
-                    <label>Card Number:</label>
-                    <input type="text" name="cardNum" id="cardNum" placeholder="nnnn-nnnn-nnnn-nnnn"/>
-                </div>
-                <div class="text_input">
-                    <label>Expiration Date:</label>
-                    <input type="date" name="expdate" id="" required/>
-                </div>
-                <div class="text_input">
-                    <label>CVC:</label>
-                    <input type="text" name="CVC" id="cvc" required placeholder="nnn"/>
-                </div>
+            <div class="timer">
+                Time Remaining:   
+                <span id="minuteLeft">5</span>
+                :
+                <span id="secondLeft">00</span>
             </div>
             <div class="buttons">
-                <input type="submit" value="submit order"/>
+                <input type="submit" value="Book Table"/>
                 <input type="reset" value="cancel"/>
             </div>
         </form>
