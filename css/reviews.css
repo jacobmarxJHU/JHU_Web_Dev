@@ -1,0 +1,31 @@
+#reviews {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+#reviews2 {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.review {
+    width: 20%;
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 5%;
+    display: inline-block;
+    background-color: rgb(235, 227, 150);
+}
+
+.review-content {
+    padding: 5px;
+    width: 100%;
+}
+
+.customer {
+    font-size: 1.5em;
+}
